@@ -4,19 +4,15 @@ import {Link} from 'react-router';
 
 const Artists = (props) => {
 
-  const albums = props.albums;
-  const selectAlbum = props.selectAlbum;
-
   return (
     <div>
       <h3>Artists</h3>
         <div className="list-group">
         {
-          this.props.artists.map(artist => {
+          props.artists.map(artist => {
             return (
               <div className="list-group-item" key={artist.id}>
-                {/* determine where to actually Link to later! */}
-                <Link to="">{ artist.name }</Link>
+                <Link to={`/artists/${artist.id}`}>{ artist.name }</Link>
               </div>
             )
           })
@@ -26,4 +22,6 @@ const Artists = (props) => {
   );
 }
 
-export default Albums;
+export default Artists;
+
+{/*onClick={() => selectArtist(artist.id)}*/}

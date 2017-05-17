@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import AppContainer from './containers/AppContainer';
 import Albums from './components/Albums';
 import Album from './containers/Album';
+import Artists from './components/Artists';
+import Artist from './components/Artist';
+
 import {Route, Router, hashHistory, IndexRedirect} from 'react-router';
 
 
